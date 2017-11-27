@@ -1,8 +1,5 @@
-import com.functional.util.HashMap
-
-/**
-  * Created by prajeeva on 11/16/17.
-  */
+package org.cds.impl.test
+import org.cds.impl.{_}
 
 object MapInitializer {
   def main(args: Array[String]): Unit = {

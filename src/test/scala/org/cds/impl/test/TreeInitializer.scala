@@ -1,8 +1,6 @@
-import com.functional.util.{BinarySearchTree, BinaryTree, LinkedList, TreeNode}
+package org.cds.impl.test
 
-/**
-  * Created by prajeeva on 9/7/17.
-  */
+import org.cds.impl.{_}
 
 object TreeInitializer {
   def main(args: Array[String]): Unit = {

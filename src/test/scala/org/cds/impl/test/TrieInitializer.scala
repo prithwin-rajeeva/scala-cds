@@ -1,8 +1,6 @@
-import com.functional.util.PrefixTree
+package org.cds.impl.test
 
-/**
-  * Created by prajeeva on 11/19/17.
-  */
+import org.cds.impl.{_}
 
 object TrieInitializer {
   def main(args: Array[String]): Unit = {

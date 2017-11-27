@@ -1,11 +1,6 @@
-package com.functional
+package org.cds.impl.test
 
-import com.functional.util.{LinkedList, ListNode, RandomLinkedList, RandomListNode}
-
-/**
-  * Created by prajeeva on 9/9/17.
-  */
-
+import org.cds.impl.{_}
 
 object ListInitializer {
   def main(args: Array[String]): Unit = {
