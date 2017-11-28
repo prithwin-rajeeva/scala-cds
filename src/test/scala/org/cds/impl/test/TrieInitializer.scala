@@ -1,9 +1,11 @@
 package org.cds.impl.test
 
-import org.cds.impl.{_}
+import org.cds.impl._
+import org.testng.annotations.Test
 
-object TrieInitializer {
-  def main(args: Array[String]): Unit = {
+class TrieInitializer {
+
+  @Test def testFunctionality(): Unit = {
     val trie = PrefixTree()
     trie.put("absent")
     trie.put("absent")

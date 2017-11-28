@@ -23,6 +23,15 @@ case class HashMap[K,V](private val buckets:Array[Entry[K,V]]) {
       temp.next = entry
     }
   }
+
+  def get(key:K):V = {
+    var temp = buckets(Math.abs(key.hashCode()%buckets.length))
+    while(temp!=null) {
+      if(temp.key.equals(key)) return temp.value
+      temp = temp.next
+    }
+    temp.value
+  }
 }
 
 object HashMap {

@@ -1,9 +1,10 @@
 package org.cds.impl.test
 
-import org.cds.impl.{_}
+import org.cds.impl._
+import org.testng.annotations.Test
 
-object TreeInitializer {
-  def main(args: Array[String]): Unit = {
+class TreeInitializer {
+  @Test def testFunctionality(): Unit = {
     var tree = BinaryTree()
     tree.root =  TreeNode(1)
     tree.root.data = 1
