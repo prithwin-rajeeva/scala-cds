@@ -1,9 +1,8 @@
 package org.cds.impl
 
-case class TreeMap[K <: Comparable[K],V >: Null](var root:TNodeEntry[K,V]) {
-  def put(k:K,v:V):V = {
+case class TreeMap[K <: Comparable[K],V >: Null](var root:TNodeEntry[K,V]) extends Map[K,V]{
+  def put(k:K,v:V):Unit = {
     root = put(root,k,v)
-    v
   }
 
   def remove(k:K):Unit = {

@@ -121,7 +121,17 @@ class TreeInitializer {
 
     var bbinsertree = BinarySearchTree(sortedList.head)
     bbinsertree.printInOrder
+  }
 
-
+  @Test def testAvlTree(): Unit = {
+    println("this executes")
+    val avlTreeMap = AVLTreeMap[String,String]()
+    avlTreeMap.put("aa","Prithwin1")
+    avlTreeMap.put("a","Prithwin1")
+    avlTreeMap.put("bb","Prithwin2")
+    avlTreeMap.put("c","Prithwin3")
+    avlTreeMap.put("d","Prithwin4")
+    avlTreeMap.put("e","Prithwin5")
+    println(avlTreeMap.get("d"))
   }
 }
